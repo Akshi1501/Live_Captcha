@@ -1,0 +1,221 @@
+    
+
+    *{       margin:0;
+        padding:0;
+    }
+    .logo{
+        width:20%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .logo img{
+        width: 25%;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+    .nabar{
+      
+        display:flex;
+      
+        align-items: center;
+        justify-content: center;
+      
+        top: 0;
+        cursor: pointer;
+        background:rgb(39, 37, 37,0.4);
+        width:100%;
+    }
+    .na-list{
+        width:100%;
+        display:flex;
+        align-items:right;
+    }
+    .na-list li{
+       list-style:none;
+       padding: 26px 30px;
+    }
+    .na-list li a{
+       text-decoration:none;
+       color:white;
+       margin-right: 0%;
+       margin-left: auto;
+    }
+    .btn-sm{
+        padding: 5px;
+        vertical-align: middle;
+        text-align:center;
+        font:black;
+        background-position:center;
+        background-size: cover;
+        width: 39px;
+        height: 29px;
+    }
+    .na-list li a:hover {
+        text-decoration:none;
+        color:#989898;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: black;
+      overflow: visible;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      right: 0;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown a:hover {background-color:white;}
+    
+    .show {display: block;}
+    
+    
+    
+    .profile-dropbtn {
+      position: absolute;
+      top:0px;
+      left:90%;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: black;
+      cursor: pointer;
+      border-radius: 40px;
+      background-size: cover;
+      height: 50px;
+      width: 50px;
+    
+    }
+    .profile-dropdown {
+      position: absolute;
+      left:96%;
+      top:19px;
+      display: inline-block;
+    }
+    .profile-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      right: -56px;
+      top: 50px;
+      z-index: 1;
+    }
+    .profile-dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .profile-dropdown a:hover {background-color: #ddd;}
+    
+    .show {display: block;}
+    
+    .hv:hover{
+      background-color: aquamarine;
+    }
+    
+
+
+    body {
+      background-image:url('/static/images/cpimg.jpg');
+      font-family:"Raleway";
+      background-size: cover;
+      top: 50%;
+      
+    }
+    div{
+      color:rgb(26, 24, 24);
+    }
+    div.form {
+      position:absolute;
+      top:50%;
+      left: 75%;
+      transform:translate(-50%,-50%);
+      width:300px;
+      height:300px;
+      padding:10px;
+      outline-style: double;
+      background-color:transparent;
+      border-radius: 15%;
+      border-color: black;
+    }
+    .form .form-header {
+      height:30px;
+      display:flex;
+      align-items:center;
+      text-align:center;
+    }
+    .form .form-header > div {
+      color:black;
+      font-size:18px;
+      font-weight:600;
+      cursor:pointer;
+      align-items: center;
+    }
+    .form.cp .form-header div.show-cp {
+      color:#f5f5f5;
+      align-items:center;
+      position: relative;
+      left: 20%;
+     
+    }
+    
+    .form .form-elements {
+      margin-top:15px;
+    }
+    .form .form-elements .form-element {
+      height:50px;
+      opacity:1;
+      overflow:hidden;
+      transition:all 500ms ease-in-out;
+    }
+    .form .form-elements input {
+      width:100%;
+      padding:10px;
+      font-size:16px;
+      color:black;
+      margin:5px 0px;
+      border-radius:10px;
+      box-sizing:border-box;
+      border:1px solid #222;
+      background:#f5f5f5;
+      color:black ;
+    }
+    .form .form-elements button {
+      width:100%;
+      padding:10px;
+      font-size:16px;
+      font-weight:600;
+      margin-top:5px;
+      margin-bottom:5px;
+      border-radius:10px;
+      border-color:#f5f5f5;
+      background:transparent;
+      color:#f5f5f5;
+      cursor:pointer;
+      font-family:"Raleway";
+      
+  }
+    .form .form-element input {
+      color: black;
+    }
+    
+    
+    
+    

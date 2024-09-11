@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Edu+QLD+Beginner&family=Jost:wght@200&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-size: cover;
+    overflow-x:hidden;
+}
+
+.logo{
+    position: absolute;
+    left: 47.5%;
+    top: 44%;
+    z-index: 2;
+}
+.logo img{
+    position: absolute;
+    left: 46%;
+    top: 44%;
+    width: 100px;
+    height: 100px;
+    border-radius: 45px;
+}
+
+.card{
+    position: absolute;
+    top:50%;
+    left:30%;
+    width:40%;
+    height:40%;
+    display: inline-block;
+    
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.texts{
+    position: absolute;
+    left:37%;
+    top:15%;
+    font-size: 40px;
+    font-family:'Oxygen', sans-serif; 
+}
+
+.text{
+    position: absolute;
+    left:6%;
+    top:37%;
+    font-size: 23px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.home{
+    position: absolute;
+    top:70%;
+    left:20%;
+    width:25%;
+    border: 1px solid black;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+.home:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.logout{
+    position: absolute;
+    top:70%;
+    border: 1px solid black;
+    left:58%;
+    width:25%;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+.logout:hover{
+    background-color: aliceblue;
+    color: black;
+}

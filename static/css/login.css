@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Maven+Pro&family=Saira:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Maven+Pro&family=Oxygen&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('s.webp');
+  background-size: cover;
+  overflow: hidden;
+}
+.right{
+
+  background-color: #039688;
+}
+.center{
+  background-color: #039688;
+  position: absolute;
+  top: 50%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border:solid black 0.5px;
+  color: black;
+  box-shadow: 10px 10px 15px rgba(237, 237, 237, 0.2);
+}
+.center h1{
+  text-align: center;
+  padding: 20px 0;
+  color: aliceblue;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 23px;
+    
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid white;
+  margin: 30px 0;
+  color: aliceblue;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  color: aliceblue;
+  border: none;
+  background: none;
+  outline: none;
+
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: aliceblue;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: aliceblue;
+  
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+  color: aliceblue;
+}
+
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 2px solid;
+  background: transparent;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+button{
+    width: 100%;
+    height: 50px;
+    border: 2px solid;
+    background: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+button a{
+  color: aliceblue;
+  text-decoration: none;
+}
+button:hover{
+  border-color:#83D0C9;
+  transition: .5s;
+}
+input[type="submit"]:hover{
+  border-color:#83D0C9;  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: aliceblue;
+}
+.signup_link{
+  color: white;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.lefttext{
+  position: absolute;
+  width: 65%;
+  height: 100vh;
+  background-color: #83D0C9;
+}
+.lefttext p {
+  font-family: 'Square Peg', cursive;
+  font-size: 110px;
+  position: absolute;
+  top:60%;
+  left:20%;
+  color: aliceblue;
+    
+}
+.wel{
+  font-family: 'Square Peg', cursive;
+  font-size: 110px;
+  position: absolute;
+  top:18%;
+  left:20%;
+  color: aliceblue;
+    
+}
+.img{
+  position: absolute;
+  width:400px;
+  top: 22%;
+  left:27%;
+}
+.adb button a{
+  position:absolute;
+  right:50%;
+  color:aliceblue;
+}

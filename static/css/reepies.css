@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 25%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+  
+    display:flex;
+  
+    align-items: center;
+    justify-content: center;
+  
+    top: 0;
+    cursor: pointer;
+    background:rgb(39, 37, 37,0.4);
+    width:100%;
+}
+.nav-list{
+    width:100%;
+    display:flex;
+    align-items:right;
+}
+.nav-list li{
+   list-style:none;
+   padding: 26px 30px;
+}
+.nav-list li a{
+   text-decoration:none;
+   color:white;
+   margin-right: 0%;
+   margin-left: auto;
+}
+.btn-sm{
+    padding: 5px;
+    vertical-align: middle;
+    text-align:center;
+    font:black;
+    background-position:center;
+    background-size: cover;
+    width: 39px;
+    height: 29px;
+}
+.nav-list li a:hover {
+    text-decoration:none;
+    color:#989898;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+  overflow: visible;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color:white;}
+
+.show {display: block;}
+
+
+
+.profile-dropbtn {
+  position: absolute;
+  top:0px;
+  left:90%;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: black;
+  cursor: pointer;
+  border-radius: 40px;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+
+}
+.profile-dropdown {
+  position: absolute;
+  left:96%;
+  top:19px;
+  display: inline-block;
+}
+.profile-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: -60px;
+  top:58px;
+  z-index: 1;
+}
+.profile-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.profile-dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.hv:hover{
+  background-color: aquamarine;
+}
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/cartt.css">
+  {% load static %}
+  <title>cart</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body style="background-image:url('{%static 'images/cartback.webp'%}'); ">
+  {% load cart %}
+  {% load custom_filter %}
+  <nav class="navbar">
+    <ul class="nav-list">
+      <div class="logo"><a href="{% url 'food' %}"><img src="/static/images/logoo.png" alt="logo"></a></div>
+      <li><a href="{% url 'order' %}">Menu<span class="badge badge-info"></span>
+        </a></li>
+        <li><a href="{% url 'recepie' %}">Recipes</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li><a href="{% url 'contact' %}">Contact Us</a></li>
+      <li><a href="{% url 'about1' %}">About Us</a></li>
+    </ul>
+    <div class="profile-dropdown">
+      <button onclick="myFunction2()" class="profile-dropbtn" style="background-image:
+          url(/static/images/myacc.jpg )"></button>
+      <div id="profile-myDropdown" class="profile-dropdown-content">
+        <a href="{% url 'profile' %}">Profile Details</a>
+        <a href="{% url 'myorder' %}">My orders</a>
+        <a href="{% url 'changepassword' %}">Change Password</a>
+        <a href="{% url 'feed' %}">Feed Back</a>
+        <a href="{% url 'signin' %}">Logout</a>
+      </div>
+    </div>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction2() {
+        document.getElementById("profile-myDropdown").classList.toggle("show");
+      }
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches('.profile-dropbtn')) {
+          var dropdowns = document.getElementsByClassName("profile-dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <center>
+      <h1><span class="material-symbols-outlined">
+            shopping_cart
+          </span>MY-CART
+      </h1>
+    </center>
+    <div class="border rounded p-4 m-4 bg-dark dark" style="background: white;">
+      <P class="text-light"></P>
+      <table class="table" style="color:white;">
+        <thead>
+          <tr>
+            <th>Sno.</th>
+            <th>image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for product in products %}
+          <tr>
+            <td>{{forloop.counter}}</td>
+            <td><img style="height:80px; width: 80px;" src="{{product.image.url}}"></td>
+            <td>{{product.name}}</td>
+            <td>{{product.price|currency}}</td>
+            <td>{{product|cart_quantity:request.session.cart}}</td>
+            <td>{{product|price_total:request.session.cart|currency}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4">TOTAL</th>
+            <th>{{products|total_cart_price:request.session.cart|currency}}</th>
+          </tr>
+        </tfoot>
+      </table>
+      <hr>
+      <div class="m-3 p-3">
+        <a href="/detail/?total={{products|total_cart_price:request.session.cart}}" class="btn border rounded btn-success col-lg-3 float-right">Check out</a>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+  {% for message in messages %}
+  <p><center><span class="material-symbols-outlined">
+      warning
+      </span>{{message}}</center></p>
+  {% endfor %}
+</body>
+</html>

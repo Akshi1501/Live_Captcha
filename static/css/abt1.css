@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 23%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+
+.navbar{
+    display:flex;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+}
+.nav-list{
+    width:100%;
+    display:flex;
+    align-items:right;
+}
+.nav-list li{
+   list-style:none;
+   padding: 26px 30px;
+}
+.nav-list li a{
+   text-decoration:none;
+   color:aliceblue;
+   margin-right: 0%;
+   margin-left: auto;
+}
+
+.nav-list li a:hover{
+    
+    font-weight: bold;
+}
+.nav-list li.active a{
+    color:black;
+    background-color:black;
+
+}
+
+
+.button{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    padding:8px 20px;
+    margin: 7px 0;
+    border-radius: 18px;
+    font-size: 15px;
+    background:none;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color:white;
+    color:black
+}
+
+.btn-sm{
+    padding: 5px;
+    vertical-align: middle;
+    text-align:center;
+    font:black;
+    background-position:center;
+    background-size: cover;
+    width: 39px;
+    height: 29px;
+}
+.nav-list li a:hover {
+    text-decoration:none;
+    color:#989898;
+ }
+
+
+
+
+.profile-dropbtn {
+  
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: black;
+  cursor: pointer;
+  border-radius: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  margin-right: 35px;
+
+}
+
+
+
+.profile-dropdown {
+  
+  position: relative;
+  display: inline-block;
+  
+}
+
+.profile-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+.profile-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.profile-dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans",sans-serif;
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans",sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+
+.main{
+ position: absolute;
+ width:100%;
+ height: 100vh;
+ background-image: url('/static/images/aboutusback.webp');
+ background-size: cover;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Noto+Sans:wght@300&family=Raleway:wght@300&display=swap');
+.sub{
+  position: absolute;
+  width:500px;
+  height:280px;
+  top:50%;
+  left:8%;
+  background-color: rgb(47, 46, 46,0.7);
+  border-radius: 10px;
+  padding:10px;
+  
+
+}
+h2{
+  font-weight: lighter;
+  font-size: 40px;
+  font-family: 'Noto Sans', sans-serif;
+  color: bisque;
+  padding-top: 8px;
+  text-shadow: 0 0 15px white;
+}
+p{
+  position: relative;
+  top:50px;
+  color: antiquewhite;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+

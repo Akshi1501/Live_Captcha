@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Maven+Pro&family=Saira:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Maven+Pro&family=Oxygen&family=Saira:wght@300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Dosis:wght@300&family=Maven+Pro&family=Oxygen&family=Philosopher&family=Saira:wght@300&family=Square+Peg&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .lefttext p {
+    font-family: 'Square Peg', cursive;
+    font-size: 90px;
+    margin: auto;
+    margin-top: 26%;
+    margin-left: 5%;
+  
+}
+body{
+
+    background-size: cover;
+   
+
+  }
+  .left{
+    position: absolute;
+    left:5%;
+    top:10%;
+    width:31%;
+
+  }
+  .right{
+    position: absolute;
+    left:69%;
+    top:10%;
+    width:31%;
+
+  }
+  .center{
+    background-color:#83D0C9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 530px;
+    height: 750px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+  }
+  .center h3{
+    text-align: center;
+    padding: 20px 0;
+    
+    font-family: 'Philosopher', sans-serif;
+    font-size: 23px;
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  form .txt_field{
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+    
+    
+   }
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    
+  }
+  .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -5px;
+    
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+  button{
+    background-color:#83D0C9;
+    color: black;
+    width:70%;
+    height:50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 15%;
+    font-weight: 1000px;
+    border-radius: 6px;
+  }
+  button:hover{
+    border-color: white;
+  transition: .5s;
+}

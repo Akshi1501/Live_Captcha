@@ -1,0 +1,121 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="/static/css/feed.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+      <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo">
+              <a href="{% url 'food' %}"><img src="/static/images/logoo.png" alt="logo"></a>
+            </div>
+
+            <div class="dropdown">
+                <li><span><a onclick="myFunction1()" class="dropbtn" href="#services">SERVICES</a></span></li>
+                
+            </div>
+            <li><a href="{% url 'contact' %}"> CONTACT US </a></li>
+            <li><a href="{% url 'food' %}">HOME</a></li>
+            <li><a href="{% url 'recepie' %}">RECEPIES</a></li>
+            <li><a href="{% url 'about1' %}">ABOUT US</a></li>
+            <li><a href="{% url 'services' %}">SERVICES</a></li>
+            <li><a href="{% url 'cart' %}"><span class="material-symbols-outlined">
+              shopping_cart_checkout
+            </span></a></li>
+            </ul>
+        <div class="profile-dropdown">
+            <button onclick="myFunction2()" class="profile-dropbtn"style="background-image:
+            url(/static/images/myacc.jpg )"></button>
+            <div id="profile-myDropdown" class="profile-dropdown-content">
+                <a href="{% url 'profile' %}">PROFILE DETAILS</a>
+                <a href="{% url 'myorder' %}">MY ORDERS</a>
+                <a href="{% url 'changepassword' %}">CHANGE PASSWORD</a>
+                <a href="{% url 'feed' %}">FEED BACK</a>
+                <a href="{% url 'signin' %}">LOGOUT</a>
+            </div>       
+        </div>
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction1() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
+
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction2() {
+            document.getElementById("profile-myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.profile-dropbtn')) {
+              var dropdowns = document.getElementsByClassName("profile-dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
+     </nav>
+      <div class="container1">
+        <div class="post">
+          <div class="text1">Thanks for rating us!</div>
+          <div class="edit">EDIT</div>
+        </div>
+        <div class="star-widget">
+          <input type="radio" name="rate" id="rate-5">
+          <label for="rate-5" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-4">
+          <label for="rate-4" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-3">
+          <label for="rate-3" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-2">
+          <label for="rate-2" class="fas fa-star"></label>
+          <input type="radio" name="rate" id="rate-1">
+          <label for="rate-1" class="fas fa-star"></label>
+          <form action="/feed" method="post">
+            {% csrf_token %}
+            <header></header>
+            <div class="textarea" >
+              <textarea cols="30" name="des" id="des" placeholder="Describe your experience....." ></textarea>
+            </div>
+            <div class="btn1">
+              <button type="submit" id="button1">Post</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script>
+        const btn1 = document.querySelector("#button1");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+       
+        
+      </script>
+  </body>
+</html>

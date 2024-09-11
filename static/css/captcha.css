@@ -1,0 +1,57 @@
+
+body{
+    background-color: rgb(17, 17, 17);
+    background: rgb(17, 17, 17);
+}
+
+.card{
+    width:40%;
+    height:60%;
+    position:absolute;
+    left:30%;
+    top:20%;
+    color:black;
+    align-items: center;
+    background-color: beige;
+    border-radius:20px;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.card h3{
+    color:black;
+    position: absolute;
+    left: 37%;
+    border: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.img-container{
+    position: absolute;
+    left: 37%;
+    top:15%;
+}
+
+.card p{
+    position: absolute;
+    left:5%;
+    top:74%;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+#verifyButton{
+    position: absolute;
+    left:38%;
+    top:87%;
+    padding:10px 20px;
+    background-color: rgb(75, 209, 135);
+    color: rgb(17, 17, 17);
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/static/css/abt1.css">
+  <title>ONLINE FOOD ORDERING SYSTEM</title>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <div class="logo"><a href="{% url 'food' %}"><img src="/static/images/logoo.png" alt="logo"></a></div>
+        <li><a href="{% url 'order' %}">Menu</a></li>
+        <li><a href="{% url 'recepie' %}">Recipes</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        <li><a href="{% url 'about1' %}">About Us</a></li>
+      </ul>
+      <div class="profile-dropdown">
+        <button onclick="myFunction2()" class="profile-dropbtn"style="background-image:
+        url(/static/images/myacc.jpg )"></button>
+        <div id="profile-myDropdown" class="profile-dropdown-content">
+          <a href="{% url 'profile' %}">Profile Details</a>
+          <a href="{% url 'myorder' %}">My orders</a>
+          <a href="{% url 'changepassword' %}">Change Password</a>
+          <a href="{% url 'feed' %}">Feed Back</a>
+          <a href="{% url 'signin' %}">Logout</a>
+        </div>
+      </div>
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction2() {
+          document.getElementById("profile-myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.profile-dropbtn')) {
+            var dropdowns = document.getElementsByClassName("profile-dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+    </nav>
+    <div class="sub">
+      <center>
+        <h2>ABOUT US</h2>
+      </center>
+
+      <p>Namma Bengaluru go bonkers on taste, so to fullfill this pleasure and also to fully fill the stomatch of
+        the people ,We pleasantly presenting ourself to you.
+        Your satisfaction is our top-most priority. We promise to serve you the best we can.</p>
+
+    </div>
+  </div>
+</body>
+</html>

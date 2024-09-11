@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+
+.navbar {
+  display: flex;
+  background: none;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  background: transparent;
+  z-index: 999;
+  position: absolute;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  align-items: right;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  margin-right: 0%;
+  margin-left: auto;
+}
+
+.nav-list li a:hover {
+  color: gray
+}
+
+.nav-list li.active a {
+  color: black;
+  background-color: black;
+
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.title h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.button {
+  position: absolute;
+  top: 70%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  border-radius: 3px;
+
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.6s ease;
+  padding: 8px 20px;
+  margin: 7px 0;
+  border-radius: 18px;
+  font-size: 15px;
+  background: none;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: white;
+  color: black
+}
+
+.btn-sm {
+  padding: 5px;
+  vertical-align: middle;
+  text-align: center;
+  font: black;
+  background-position: center;
+  background-size: cover;
+  width: 39px;
+  height: 29px;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: #989898;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown {
+
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: white;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.profile-dropbtn {
+
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: black;
+  cursor: pointer;
+  border-radius: 50%;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  margin-right: 35px;
+
+}
+
+
+
+.profile-dropdown {
+
+  position: relative;
+  display: inline-block;
+
+}
+
+.profile-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.profile-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.profile-dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  position: absolute;
+  top: 24%;
+  left: 8%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.heading {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+.right {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  background-color: aliceblue;
+  width: 40%;
+  height: 100vh;
+}
+
+.inner {
+  position: absolute;
+  border: 2px solid black;
+  top: 30%;
+  left: 17%;
+  width: 70%;
+  height: 50%;
+  background-color: aquamarine;
+}
+
+.head {
+  margin-top: 12%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+.cc {
+  position: absolute;
+  top: 45%;
+  left: 49%;
+  width: 25px;
+  height: 25px;
+}
+
+.ccc {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  border-style: solid;
+  border: none;
+}
+
+.container form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.left {
+  background-color: aquamarine;
+  width: 60%;
+  height: 150vh;
+}
+
+.container form .row .col {
+  flex: 1 1 250px;
+}
+
+.container form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container input {
+  border: none;
+  outline: none;
+
+}
+
+.container form .row .col .inputBox {
+  margin: 15px 0;
+  border: none;
+
+  outline: none;
+  border-bottom: 2px solid green;
+}
+
+.container form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input {
+  width: 100%;
+
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: green;
+  color: #fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover {
+  background: black;
+}

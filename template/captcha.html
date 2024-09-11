@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  {%load static%}
+  <link rel="stylesheet" href="{%static 'css/captcha.css'%}">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Verify Captcha</title>
+</head>
+<body>
+    <div class="card">
+        <h3>Verify Live Captcha</h3>
+        <div class="img-container">
+            <img class="img" src="{{captcha.image.url}}" height="250px" width="150px">
+        </div>
+        
+        <p>Press Verify button and Please show the hand sign as displayed in the above image.</p>
+        <input type="text" id="nameInput" value={{captcha.name}} style="display: none;">
+        <button id="verifyButton">Verify the Captcha</button>
+
+        <script>
+            document.getElementById("verifyButton").addEventListener("click", function() {
+                var nameToSend = document.getElementById("nameInput").value;
+                window.location.href = "verify/?name=" + nameToSend;
+            });
+            
+        </script>
+    </div>    
+
+</body>
